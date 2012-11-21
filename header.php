@@ -7,7 +7,6 @@
 <!-- START META DESCRIPTION -->
 <meta name="description" content="<?php if ( is_home() || is_category() || is_archive() ) { print 'This portion of the Premium Design Works website is written by Mike Sinkula and dedicated to the Web Design & Development students at Seattle Central Community College.'; } ?><?php if ( is_page() || is_single()) { $key="meta"; echo get_post_meta($post->ID, $key, true); /* get the value for the key of meta */ } ?>">
 <!-- END META DESCRIPTION -->
-<!-- XXX -->  
 
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
 
