@@ -1,0 +1,15 @@
+/*  
+Theme Name: premiumdw_wireframe
+Description: This is a theme your mom would love.
+Version: Wireframe
+Author: Premium Design Works
+Author URI: http://www.premiumdw.com/
+*/
+
+	
+body {
+	background-image: url(images/bg-body-top.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+ 	}
