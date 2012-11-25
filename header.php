@@ -5,7 +5,7 @@
 <title><?php if ( is_home() ) { ?><?php bloginfo('description'); ?><?php } ?><?php wp_title(''); ?> | <?php if ( is_page() && $post->post_parent ) { ?><?php $parent_title = get_the_title($post->post_parent); echo $parent_title; print ' |' ?><?php } ?>  Premium Design Works</title>
 
 <!-- START META DESCRIPTION -->
-<meta name="description" content="<?php if ( is_home() || is_category() || is_archive() ) { print 'This portion of the Premium Design Works website is written by Mike Sinkula and dedicated to the Web Design & Development students at Seattle Central Community College.'; } ?><?php if ( is_page() || is_single()) { $key="meta"; echo get_post_meta($post->ID, $key, true); /* get the value for the key of meta */ } ?>">
+<meta name="description" content="<?php if ( is_home() || is_category() || is_archive() ) { print 'This portion of the Premium Design Works website is written by Mike Sinkula and dedicated to the Web Design & Development students at Seattle Central Community College.'; } ?><?php if ( is_page() ) { $key="meta"; echo get_post_meta($post->ID, $key, true); } ?><?php if ( is_single() ) { echo strip_tags(get_the_excerpt()); } ?>">
 <!-- END META DESCRIPTION -->
 
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
