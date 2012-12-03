@@ -1,6 +1,8 @@
 <div id="sidebar">
 	
-    <?php if ( !is_404() ) { ?> 
+    <?php // if is not either the 'not found' or 'search' pages
+	
+	if ( !is_404() ) { if ( !is_search() ) {  ?> 
     
         <!-- Begin Class -->
         <?php //list sub-pages even if on a sub-page
@@ -65,10 +67,10 @@
         <?php } ?>
         <!-- End Teams -->
     
-    <?php } ?>		
+    <?php } } ?>		
         
     <!-- Begin Wigets -->
-	<?php if ( is_home() || is_single() || is_archive() || is_page_template('utility.php')  ) { ?> 
+	<?php if ( is_home() || is_single() || is_archive() || is_page_template('utility.php') ) { ?> 
     	
 		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar(1) ) : else : ?>
 		<?php endif; ?>        

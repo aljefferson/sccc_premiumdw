@@ -142,9 +142,14 @@ th, td {
 			border-bottom: none;
 			}
 			
-	#searchform {
+	div#header form.searchform {
 		text-align: right;
 		padding: 8px 20px;
+		}
+		
+	div#content form.searchform {
+		text-align: left;
+		padding: 8px 0px;
 		}
 		
 		div.search label, div.search br  {
